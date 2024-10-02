@@ -9,8 +9,11 @@ def main():
     
 
     args = parser.parse_args()
-    _server = Server( args.port, args.socket_type)
+    _server = Server( args.socket_type, args.port)
     _server.run()
 
 if __name__ == "__main__":
     main()
+
+#python3 p1server.py 5555 UDP
+#python3 p1server.py 5555 TCP
